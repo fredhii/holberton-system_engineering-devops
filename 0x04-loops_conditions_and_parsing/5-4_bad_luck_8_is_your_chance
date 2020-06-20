@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Print holberton ten times
+
+for ((x=1; x < 11; x++)); do
+    if [ $x -eq 4 ]; then
+        echo "bad luck"
+    elif [ $x -eq 8 ]; then
+        echo "good luck"
+    else
+        echo "Holberton School"
+    fi
+done

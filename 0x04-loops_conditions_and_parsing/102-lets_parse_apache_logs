@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Show apache IP's
+
+awk '{ printf "%s %s\n", $1, $9 }' "apache-access.log"

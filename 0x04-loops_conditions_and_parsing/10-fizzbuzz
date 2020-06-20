@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Print FizzBuzz
+
+for ((x=1; x < 101; x++)); do
+    if [ $((x%5)) -eq 0 ] && [ $((x%3)) -eq 0 ]; then
+	  echo "FizzBuzz"
+      elif [ $((x%5)) -eq 0 ]; then
+	  echo "Buzz"
+      elif [ $((x%3)) -eq 0 ]; then
+	  echo "Fizz"
+      else
+	  echo "$x"
+      fi
+done

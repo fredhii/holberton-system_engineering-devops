@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Print list
+
+tmp="$(ls -1)"
+for x in $tmp; do
+    echo "$x" | cut -d'-' -f2
+done

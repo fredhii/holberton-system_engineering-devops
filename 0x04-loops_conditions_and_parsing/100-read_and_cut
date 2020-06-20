@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Print holberton ten times
+
+while read -r l; do
+    echo "$l" | cut -d':' -f1,3,6
+done </etc/passwd
