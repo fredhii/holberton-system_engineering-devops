@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Print holberton ten times
 
-for ((x=1; x < 11; x++)); do
+x=1
+while [ $x -le 10 ]; do
     if [ $x -eq 4 ]; then
         echo "bad luck"
     elif [ $x -eq 8 ]; then
@@ -9,4 +10,5 @@ for ((x=1; x < 11; x++)); do
     else
         echo "Holberton School"
     fi
+    x=$((x+1))
 done

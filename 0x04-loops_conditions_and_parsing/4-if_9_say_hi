@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 # Print holberton ten times and hi
 
-for ((x=0; x < 10; x++)); do
+x=0
+while [ $x -lt 10 ]; do
     echo "Holberton School"
     if [ $x -eq 8 ]; then
         echo "Hi"
     fi
+    x=$((x+1))
 done
