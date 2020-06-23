@@ -2,7 +2,7 @@
 # Show text2 while text1 is executing 
 
 while true; do
+    trap 'echo "I am invincible!!!"' SIGTERM
     echo "To infinity and beyond"
     sleep 2
-    trap 'echo "I am invincible"' SIGTERM
 done
