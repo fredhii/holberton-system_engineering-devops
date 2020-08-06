@@ -11,9 +11,9 @@
   <p align="center">
         <em>--</em>
     <br /><br />
-    <a href="https://github.com/fredhii/command_line_for_the_win/issues">Report Bug</a>
+    <a href="https://github.com/fredhii/holberton-system_engineering-devops/issues">Report Bug</a>
     ·
-    <a href="https://github.com/fredhii/command_line_for_the_win/issues">Request Feature</a>
+    <a href="https://github.com/fredhii/holberton-system_engineering-devops/issues">Request Feature</a>
   </p>
 </p>
 
@@ -26,11 +26,11 @@ Screenshots showing that I accomplish cmd challenge
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/fredhii/command_line_for_the_win?style=flat-square
-[contributors-url]: https://github.com/fredhii/command_line_for_the_win/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/fredhii/command_line_for_the_win.svg?style=flat-square
-[forks-url]: https://github.com/fredhii/command_line_for_the_win/network/members
-[stars-shield]: https://img.shields.io/github/stars/fredhii/command_line_for_the_win.svg?style=flat-square
-[stars-url]: https://github.com/fredhii/command_line_for_the_win/stargazers
-[issues-shield]: https://img.shields.io/github/issues/fredhii/command_line_for_the_win?style=flat-square
-[issues-url]: https://github.com/fredhii/command_line_for_the_win/issues
+[contributors-shield]: https://img.shields.io/github/contributors/fredhii/holberton-system_engineering-devops?style=flat-square
+[contributors-url]: https://github.com/fredhii/holberton-system_engineering-devops/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/fredhii/holberton-system_engineering-devops.svg?style=flat-square
+[forks-url]: https://github.com/fredhii/holberton-system_engineering-devops/network/members
+[stars-shield]: https://img.shields.io/github/stars/fredhii/holberton-system_engineering-devops.svg?style=flat-square
+[stars-url]: https://github.com/fredhii/holberton-system_engineering-devops/stargazers
+[issues-shield]: https://img.shields.io/github/issues/fredhii/holberton-system_engineering-devops?style=flat-square
+[issues-url]: https://github.com/fredhii/holberton-system_engineering-devops/issues
