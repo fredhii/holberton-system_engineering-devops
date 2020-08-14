@@ -19,5 +19,5 @@ sudo echo "	option httpclose" >> /etc/haproxy/haproxy.cfg
 sudo echo "	option forwardfor" >> /etc/haproxy/haproxy.cfg
 sudo echo "	server 1489-web-01 34.74.9.37 check port 80" >> /etc/haproxy/haproxy.cfg
 sudo echo "	server 1489-web-02 34.74.166.225 check port 80" >> /etc/haproxy/haproxy.cfg
-§
+
 sudo service haproxy restart
