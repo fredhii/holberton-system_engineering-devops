@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://gitlab.com/uploads/-/system/project/avatar/3615712/cmdline.png" width="80" height="80">
-  <h3 align="center">0x0F-load_balancer</h3>
+  <h3 align="center">0x0E. Web stack debugging #1</h3>
 
   <p align="center">
         <em>--</em>
