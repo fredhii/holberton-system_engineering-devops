@@ -1,3 +1,4 @@
 #!/bin/bash
-mysqldump -u root -p --all-databases > backup.sql
+# Script that generates a back up from a database
+mysqldump -u root -p"$1" --all-databases > backup.sql
 sudo tar -czvf $(date "+%d-%m-%Y").tar.gz backup.sql
