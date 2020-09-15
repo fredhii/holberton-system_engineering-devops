@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ Calls an API in order to get completed tasks """
 import requests
+import urllib3
 from sys import argv
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 if __name__ == '__main__':
