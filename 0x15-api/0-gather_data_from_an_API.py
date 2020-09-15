@@ -3,23 +3,26 @@
 import requests
 from sys import argv
 
-
 if __name__ == '__main__':
-    try:
-        userId = argv[1]
-        userData = requests.get(
-            "https://jsonplaceholder.typicode.com/users/{}".
-            format(userId), verify=False).json()
-        toDo = requests.get(
-            "https://jsonplaceholder.typicode.com/todos?userId={}".
-            format(userId), verify=False).json()
-        completedTasks = []
-        for task in toDo:
-            if task.get('completed') is True:
-                completedTasks.append(task.get('title'))
-        print("Employee {} is done with tasks({}/{}):".
-              format(userData.get('name'), len(completedTasks), len(toDo)))
-        for task in completedTasks:
-            print('\t {}'.format(task))
-    except ValueError:
-        exit
+    userId = argv[1]
+    url_todo = 'https://jsonplaceholder.typicode.com/todos/'
+    url_user = 'https://jsonplaceholder.typicode.com/users/'
+    todo = requests.get(url_todo, params={'userId': userId})
+    user = requests.get(url_user, params={'id': userId})
+
+    todo_dict_list = todo.json()
+    user_dict_list = user.json()
+
+    done_tasks = []
+    total_tasks = len(todo_dict_list)
+    employee = user_dict_list[0].get('name')
+
+    for task in todo_dict_list:
+        if task.get('completed') is True:
+            done_tasks.append(task)
+
+    print("Employee {} is done with tasks({}/{}):"
+          .format(employee, len(done_tasks), total_tasks))
+
+    for task in done_tasks:
+        print("\t {}".format(task.get('title')))
