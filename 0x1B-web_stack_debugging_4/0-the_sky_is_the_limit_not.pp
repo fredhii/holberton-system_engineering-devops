@@ -1,11 +1,6 @@
-# change u limit and restart nginx
-
-exec { 'change ulimit':
-  path    => '/bin',
-  command => "sed -i 's/15/2000/g' /etc/default/nginx"
-}
-
-exec { 'nginx restart':
-  path    => '/etc/init.d/',
-  command => 'nginx restart'
+# increases the open file limit for nginx
+exec { 'fix file limit':
+  onlyif  => 'test -e /etc/default/nginx',
+  command => 'sed -i "5s/[0-9]\+/$( ulimit -n )/" /etc/default/nginx; service nginx restart',
+  path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
 }
